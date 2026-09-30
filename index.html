@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>تسجيل وعيها | مسابقة وعيها — مؤسسة وعي للفكر والثقافة</title>
+<meta name="description" content="استبيان تسجيل الطالبات في مسابقة وعيها التابعة لمؤسسة وعي للفكر والثقافة.">
+<meta name="theme-color" content="#0B2E23">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- زخرفة خلفية متحركة -->
+<div class="bg-ornament" aria-hidden="true">
+  <svg width="100%" height="100%">
+    <defs>
+      <pattern id="weave" width="86" height="86" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+        <g fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M43 2 L84 43 L43 84 L2 43 Z"/>
+          <path d="M43 18 L68 43 L43 68 L18 43 Z"/>
+          <circle cx="43" cy="43" r="7"/>
+          <path d="M2 2 L18 18 M84 2 L68 18 M2 84 L18 68 M84 84 L68 68"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#weave)"/>
+  </svg>
+</div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#" id="brandHome">
+      <span class="brand-mark">
+        <img src="logo.png" alt="شعار مؤسسة وعي للفكر والثقافة"
+             onerror="this.onerror=null;this.style.display='none';this.parentNode.classList.add('mark-fallback')">
+      </span>
+      <span class="brand-text">
+        <strong>تسجيل وعيها</strong>
+        <small>مؤسسة وعي للفكر والثقافة</small>
+      </span>
+    </a>
+    <div class="topbar-tag">مسابقة وعيها</div>
+  </div>
+</header>
+
+<main id="app">
+
+  <!-- ============ صفحة الترحيب ============ -->
+  <section class="screen screen-welcome is-active" id="screen-welcome">
+    <div class="hero-band">
+      <div class="wrap hero-grid">
+
+        <div class="hero-copy">
+          <p class="kicker reveal" style="--d:.05s">مؤسسة وعي للفكر والثقافة</p>
+
+          <h1 class="display reveal" style="--d:.12s">
+            تسجيل <span class="gold">وعيها</span>
+          </h1>
+
+          <div class="rule-ornament reveal" style="--d:.18s" aria-hidden="true">
+            <span></span><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2c2 5 5 8 10 10-5 2-8 5-10 10-2-5-5-8-10-10 5-2 8-5 10-10z" fill="currentColor"/></svg><span></span>
+          </div>
+
+          <p class="mission reveal" style="--d:.24s">
+            مؤسسة هدفها الوعي وطريقها الثقافة ومنهاجها رسول الله وأهل بيته (ص)
+          </p>
+
+          <p class="lede reveal" style="--d:.3s">
+            استبيان تسجيل الطالبات في مسابقة <strong>وعيها</strong> — للطالبات والمدرسات والجامعيات والإعداديات.
+            ثمانية أسئلة قصيرة، ثم مراجعة سريعة، ثم إرسال واحد.
+          </p>
+
+          <div class="hero-actions reveal" style="--d:.36s">
+            <button class="btn btn-primary btn-lg" id="startBtn">
+              <span>ابدئي التسجيل</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="hero-facts">
+              <li><b>٨</b> أسئلة</li>
+              <li><b>دقيقة</b> واحدة</li>
+              <li><b>جوائز</b> قيمة</li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="hero-figure reveal" style="--d:.2s">
+          <div class="arch-frame">
+            <span class="arch-outline" aria-hidden="true"></span>
+            <div class="arch">
+              <img src="image.png" alt="ملصق مسابقة وعيها"
+                   onerror="this.onerror=null;this.src='https://images.pexels.com/photos/20784928/pexels-photo-20784928.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800';">
+            </div>
+            <span class="arch-plaque">مسابقة وعيها</span>
+          </div>
+          <figcaption>إعلان مسابقة وعيها — مؤسسة وعي للفكر والثقافة</figcaption>
+        </figure>
+
+      </div>
+    </div>
+
+    <div class="wrap strip">
+      <div class="strip-item"><span class="strip-n">١</span><p>تُسجّلين بياناتكِ في ثمانية أسئلة قصيرة.</p></div>
+      <div class="strip-item"><span class="strip-n">٢</span><p>تراجعين إجاباتكِ قبل الإرسال وتعيدين تعديلها.</p></div>
+      <div class="strip-item"><span class="strip-n">٣</span><p>تصلكِ رسالة تأكيد فور استلام التسجيل.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ الاستبيان ============ -->
+  <section class="screen screen-quiz" id="screen-quiz">
+    <div class="wrap quiz-shell">
+
+      <!-- الشريط الجانبي -->
+      <aside class="rail">
+        <div class="rail-inner">
+          <div class="rail-num" id="railNum">01</div>
+          <div class="rail-line" aria-hidden="true"><i id="railFill"></i></div>
+          <div class="rail-label">
+            <span>الخطوة</span>
+            <strong id="railTitle">الاسم الثلاثي</strong>
+          </div>
+          <div class="rail-foot">
+            <span>مؤسسة هدفها الوعي</span>
+            <span>وطريقها الثقافة</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- منطقة الأسئلة -->
+      <div class="quiz-main">
+        <div class="progress-head">
+          <div class="progress-meta">
+            <span class="stepline" id="stepLine">الخطوة 1 من 8</span>
+            <span class="percent" id="percent">12%</span>
+          </div>
+          <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="12" id="bar">
+            <i id="barFill"></i>
+            <span class="dots" id="dots" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <form class="steps" id="stepsForm" novalidate>
+
+          <!-- 1 -->
+          <section class="step is-active" data-step="1" data-title="الاسم الثلاثي">
+            <p class="eyebrow">الخطوة الأولى · الهوية</p>
+            <h2 class="question">ما اسمكِ الثلاثي؟</h2>
+            <div class="field">
+              <label for="f-name">الاسم الثلاثي</label>
+              <input type="text" id="f-name" data-field="name" class="input" placeholder="مثال: زينب علي حسين" autocomplete="name">
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«لاَ يَدْخُلُ الْفَقْرُ بَيْتاً فِيهِ اسْمُ مُحَمَّدٍ... أَوْ فَاطِمَةَ مِنَ النِّسَاءِ»</p>
+              <cite>عن الإمام موسى الكاظم (عليه السلام)</cite>
+            </blockquote>
+          </section>
+
+          <!-- 2 -->
+          <section class="step" data-step="2" data-title="العنوان">
+            <p class="eyebrow">الخطوة الثانية · السكن</p>
+            <h2 class="question">ما عنوان السكن؟</h2>
+            <div class="field">
+              <label for="f-address">العنوان</label>
+              <input type="text" id="f-address" data-field="address" class="input" placeholder="المحافظة — المدينة — المنطقة — أقرب نقطة دالة">
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«ثَلاَثَةٌ لِلْمُؤْمِنِ فِيهَا رَاحَةٌ: دَارٌ وَاسِعَةٌ تُوَارِي عَوْرَتَهُ وَحَالَهُ عَنِ النَّاسِ، وَامْرَأَةٌ صَالِحَةٌ تُعِينُهُ عَلَى أَمْرِ الدُّنْيَا وَالْآخِرَةِ، وَوَلَدٌ بَارٌّ»</p>
+              <cite>عن الإمام الصادق (عليه السلام)</cite>
+            </blockquote>
+          </section>
+
+          <!-- 3 -->
+          <section class="step" data-step="3" data-title="التحصيل الدراسي">
+            <p class="eyebrow">الخطوة الثالثة · التحصيل</p>
+            <h2 class="question">ما تحصيلكِ الدراسي؟</h2>
+            <div class="field">
+              <span class="label">اختاري التحصيل الدراسي</span>
+              <div class="options" id="eduOptions">
+                <label class="chip"><input type="radio" name="education" value="متوسطة" data-field="education"><span>متوسطة</span></label>
+                <label class="chip"><input type="radio" name="education" value="إعدادية" data-field="education"><span>إعدادية</span></label>
+                <label class="chip"><input type="radio" name="education" value="دبلوم" data-field="education"><span>دبلوم</span></label>
+                <label class="chip"><input type="radio" name="education" value="بكالوريوس" data-field="education"><span>بكالوريوس</span></label>
+                <label class="chip"><input type="radio" name="education" value="دبلوم عالي" data-field="education"><span>دبلوم عالي</span></label>
+                <label class="chip"><input type="radio" name="education" value="ماجستير" data-field="education"><span>ماجستير</span></label>
+                <label class="chip"><input type="radio" name="education" value="دكتوراه" data-field="education"><span>دكتوراه</span></label>
+                <label class="chip"><input type="radio" name="education" value="أخرى" data-field="education"><span>أخرى</span></label>
+              </div>
+              <div class="sub-field" id="eduOtherWrap" hidden>
+                <label for="f-edu-other">اذكري التحصيل الدراسي</label>
+                <input type="text" id="f-edu-other" data-field="educationOther" class="input" placeholder="اكتبي تحصيلكِ الدراسي">
+              </div>
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«مَنْ كَانَتْ لَهُ ابْنَةٌ فَأَدَّبَهَا فَأَحْسَنَ أَدَبَهَا، وَعَلَّمَهَا فَأَحْسَنَ تَعْلِيمَهَا، وَأَوْسَعَ عَلَيْهَا مِنْ نِعَمِ اللهِ الَّتِي أَسْبَغَ عَلَيْهِ، كَانَتْ لَهُ سِتْراً وَحِجَاباً مِنَ النَّارِ»</p>
+              <cite>عن رسول الله (صلى الله عليه وآله)</cite>
+            </blockquote>
+          </section>
+
+          <!-- 4 -->
+          <section class="step" data-step="4" data-title="التخصص">
+            <p class="eyebrow">الخطوة الرابعة · التخصص</p>
+            <h2 class="question">ما تخصصكِ؟</h2>
+            <div class="field">
+              <label for="f-spec">التخصص</label>
+              <select id="f-spec" class="input select" data-field="specialization">
+                <option value="" selected disabled>اختاري التخصص</option>
+                <option>علمي</option>
+                <option>أدبي</option>
+                <option>شريعة ودراسات إسلامية</option>
+                <option>تربية وعلوم تربوية</option>
+                <option>طب وعلوم صحية</option>
+                <option>هندسة</option>
+                <option>حاسبات وتقنية معلومات</option>
+                <option>إدارة أعمال واقتصاد</option>
+                <option>حقوق</option>
+                <option>آداب ولغات</option>
+                <option>علوم</option>
+                <option>أخرى</option>
+              </select>
+              <div class="sub-field" id="specOtherWrap" hidden>
+                <label for="f-spec-other">اكتبي التخصص</label>
+                <input type="text" id="f-spec-other" data-field="specializationOther" class="input" placeholder="اكتبي تخصصكِ">
+              </div>
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«إِنَّ اللهَ تَعَالَى يُحِبُّ إِذَا عَمِلَ أَحَدُكُمْ عَمْلاً أَنْ يُتْقِنَهُ»</p>
+              <cite>عن رسول الله (صلى الله عليه وآله)</cite>
+            </blockquote>
+          </section>
+
+          <!-- 5 -->
+          <section class="step" data-step="5" data-title="فيسبوك / إنستغرام">
+            <p class="eyebrow">الخطوة الخامسة · التواصل الاجتماعي</p>
+            <h2 class="question">معرف حسابكِ على فيسبوك أو إنستغرام</h2>
+            <p class="hint">يكفي إدخال معرف واحد منهما، ويمكنكِ إدخال الاثنين معًا.</p>
+            <div class="field two">
+              <div>
+                <label for="f-facebook"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.29-.04-1.27-.12-2.41-.12-2.39 0-4.02 1.46-4.02 4.13v2.29H7.5V14h2.77v8h3.23z"/></svg> فيسبوك</label>
+                <input type="text" id="f-facebook" data-field="facebook" class="input ltr" dir="ltr" placeholder="example">
+              </div>
+              <div>
+                <label for="f-instagram"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17.5 6.9a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0zM21 7.05c-.05-1.42-.39-2.68-1.42-3.71-1.03-1.03-2.29-1.37-3.71-1.43C14.42 1.84 9.58 1.84 8.13 1.91c-1.41.06-2.67.4-3.7 1.43C3.4 4.37 3.06 5.63 3 7.05c-.07 1.45-.07 6.29 0 7.74.05 1.42.39 2.68 1.42 3.71 1.03 1.03 2.29 1.38 3.71 1.43 1.45.07 6.29.07 7.74 0 1.42-.05 2.68-.4 3.71-1.43 1.03-1.03 1.37-2.29 1.42-3.71.07-1.45.07-6.28 0-7.74zm-1.9 9.4a3.16 3.16 0 0 1-1.78 1.78c-1.23.49-4.16.37-5.52.37s-4.3.11-5.52-.37a3.16 3.16 0 0 1-1.78-1.78c-.49-1.23-.37-4.16-.37-5.52s-.11-4.3.37-5.52A3.16 3.16 0 0 1 6.48 3.65c1.23-.49 4.16-.37 5.52-.37s4.3-.11 5.52.37a3.16 3.16 0 0 1 1.78 1.78c.49 1.23.37 4.16.37 5.52s.12 4.3-.37 5.52z"/></svg> إنستغرام</label>
+                <input type="text" id="f-instagram" data-field="instagram" class="input ltr" dir="ltr" placeholder="example">
+              </div>
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى»</p>
+              <cite>عن رسول الله (صلى الله عليه وآله)</cite>
+            </blockquote>
+          </section>
+
+          <!-- 6 -->
+          <section class="step" data-step="6" data-title="التليكرام">
+            <p class="eyebrow">الخطوة السادسة · التواصل</p>
+            <h2 class="question">ما معرفكِ على التليكرام؟</h2>
+            <div class="field">
+              <label for="f-telegram">معرف التليكرام</label>
+              <input type="text" id="f-telegram" data-field="telegram" class="input ltr" dir="ltr" placeholder="@username">
+              <small class="note">يمكنكِ كتابة المعرف مع أو بدون الرمز @، وسيتم تنظيفه تلقائيًا.</small>
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«مَنْ كَانَ يُؤْمِنُ بِاللهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْراً أَوْ لِيَصْمُتْ»</p>
+              <cite>عن رسول الله (صلى الله عليه وآله)</cite>
+            </blockquote>
+          </section>
+
+          <!-- 7 -->
+          <section class="step" data-step="7" data-title="حضور الندوة">
+            <p class="eyebrow">الخطوة السابعة · الندوة الشهرية</p>
+            <h2 class="question">هل تستطيعين الحضور في ندوة واحدة كل شهر؟</h2>
+            <div class="field">
+              <div class="choices" id="seminarChoices">
+                <label class="choice"><input type="radio" name="monthlySeminar" value="نعم" data-field="monthlySeminar"><span class="dot"></span><span class="txt">نعم</span></label>
+                <label class="choice"><input type="radio" name="monthlySeminar" value="لا" data-field="monthlySeminar"><span class="dot"></span><span class="txt">لا</span></label>
+              </div>
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ»</p>
+              <cite>عن رسول الله (صلى الله عليه وآله)</cite>
+            </blockquote>
+          </section>
+
+          <!-- 8 -->
+          <section class="step" data-step="8" data-title="الزيارات">
+            <p class="eyebrow">الخطوة الثامنة · الزيارات</p>
+            <h2 class="question">هل ستحضرين في زيارات للعتبات والمراكز الثقافية ضمن برنامج نسائي للمؤسسة؟</h2>
+            <div class="field">
+              <div class="choices" id="visitChoices">
+                <label class="choice"><input type="radio" name="culturalVisits" value="نعم" data-field="culturalVisits"><span class="dot"></span><span class="txt">نعم</span></label>
+                <label class="choice"><input type="radio" name="culturalVisits" value="لا" data-field="culturalVisits"><span class="dot"></span><span class="txt">لا</span></label>
+              </div>
+            </div>
+            <p class="err" data-err hidden></p>
+            <blockquote class="hadith">
+              <p>«زُورُوا الْقُبُورَ فَإِنَّهَا تُذَكِّرُكُمُ الْآخِرَةَ»</p>
+              <cite>عن الإمام جعفر الصادق (عليه السلام)</cite>
+            </blockquote>
+          </section>
+
+        </form>
+
+        <nav class="nav-bar">
+          <button type="button" class="btn btn-ghost" id="prevBtn" hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>السابق</span>
+          </button>
+          <span class="nav-spacer"></span>
+          <button type="button" class="btn btn-primary" id="nextBtn">
+            <span>التالي</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ صفحة المراجعة ============ -->
+  <section class="screen screen-review" id="screen-review">
+    <div class="wrap review-wrap">
+      <p class="eyebrow center">الخطوة الأخيرة · قبل الإرسال</p>
+      <h2 class="display sm center">مراجعة التسجيل</h2>
+      <p class="lede center">راجعي بياناتكِ بعناية، ويمكنكِ تعديل أي حقل قبل الإرسال النهائي.</p>
+
+      <div class="review-card">
+        <dl class="review-list" id="reviewList"></dl>
+      </div>
+
+      <div class="review-actions">
+        <button type="button" class="btn btn-ghost" id="editBtn">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 20h4l10-10-4-4L4 16v4zM14 6l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>تعديل البيانات</span>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" id="submitBtn">
+          <span class="btn-label">إرسال التسجيل</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="err center" id="submitErr" hidden></p>
+    </div>
+  </section>
+
+  <!-- ============ صفحة النجاح ============ -->
+  <section class="screen screen-success" id="screen-success">
+    <div class="wrap success-wrap">
+      <div class="success-ring" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><circle class="ring" cx="60" cy="60" r="54"/><path class="tick" d="M38 62l16 16 30-32"/></svg>
+      </div>
+      <h2 class="display sm">تم تسجيلكِ بنجاح</h2>
+      <p class="lede">تم استلام بيانات التسجيل بنجاح.</p>
+      <p class="lede gold-text">شكرًا لمشاركتكِ في مسابقة وعيها.</p>
+
+      <div class="success-brand">
+        <img src="logo.png" alt="شعار مؤسسة وعي" class="mini-logo"
+             onerror="this.onerror=null;this.style.display='none';">
+        <strong>مؤسسة وعي للفكر والثقافة</strong>
+        <span>مؤسسة هدفها الوعي وطريقها الثقافة ومنهاجها رسول الله وأهل بيته (ص)</span>
+      </div>
+
+      <button class="btn btn-primary" id="homeBtn">العودة إلى البداية</button>
+    </div>
+  </section>
+
+  <!-- ============ صفحة الخطأ ============ -->
+  <section class="screen screen-error" id="screen-error">
+    <div class="wrap success-wrap">
+      <div class="fail-mark" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52"/><path d="M42 42l36 36M78 42L42 78"/></svg>
+      </div>
+      <h2 class="display sm">تعذر إرسال التسجيل</h2>
+      <p class="lede">يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى.</p>
+      <p class="note center">جميع إجاباتكِ محفوظة، ولن تحتاجين إلى إعادة إدخالها.</p>
+      <div class="review-actions center">
+        <button class="btn btn-primary" id="retryBtn">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>إعادة المحاولة</span>
+        </button>
+        <button class="btn btn-ghost" id="backToReviewBtn">العودة إلى المراجعة</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="rule-ornament" aria-hidden="true"><span></span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2c2 5 5 8 10 10-5 2-8 5-10 10-2-5-5-8-10-10 5-2 8-5 10-10z" fill="currentColor"/></svg><span></span></div>
+    <p class="foot-title">مؤسسة وعي للفكر والثقافة</p>
+    <p class="foot-sub">مؤسسة هدفها الوعي وطريقها الثقافة ومنهاجها رسول الله وأهل بيته (ص)</p>
+    <p class="foot-copy">وعيها للفكر والعرفان · جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
